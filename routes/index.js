@@ -18,7 +18,7 @@ router.get('/', function(req, res, next) {
                 
             });
         }
-        fs.appendFile('../ip.txt','ip地址:'+ip+','+'时间:'+time+'\n',(err,data) => {
+        fs.appendFile('../ip.txt','ip地址:'+ip+','+'时间:'+time+'\r\n',(err,data) => {
             console.log("写入成功");
         });
     });
