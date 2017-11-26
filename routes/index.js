@@ -14,7 +14,7 @@ router.get('/', function(req, res, next) {
 
     fs.exists("../ip.txt", function(exists) {
         if(!exists){
-            fs.open('../ip.txt','',function () {
+            fs.writeFile('../ip.txt','',function (err,data) {
                 
             });
         }
